@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .middle{
+            color: rgb(192, 110, 230);
+            background-color: beige;
+        }
+    </style>
+    <link rel="stylesheet" href="deneme.css">
+</head>
+<!--
+css dosyasını html dosyasına eklemenin 3 yolu vardır. Bunlardan ilki etiketin iç kısmına dahil
+etmek. ikinci yöntem ise style etiketini kullaranarak bu dahil etme işlenmini gerçekleştiremek
+ve en son yöntem ise direkmen bir css dosyası oluşturup öyle bilgileri dahil etmek. Bu derte 
+ise her 3 yolu hep beraber öğreneceğiz.
+-->
+
+
+<!--1. iç kısma css eklemek-->
+
+<body>
+    <div class="header">
+        <h2 style="color: rgb(7, 60, 7); background-color: beige; height: 50px;"><strong>css verilerini html dosyasına
+                eklemenin yolları</strong></h2>
+    </div>
+
+
+    <!--2. style etiketini kullanarak(head kısmında style etiketinin içinde)-->
+    <div class="middle">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est architecto nostrum natus modi rem optio, animi
+            quae provident minima qui repellendus amet deserunt.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse accusantium similique cupiditate eveniet aut
+            voluptatibus doloribus.</p>
+    </div>
+
+    <!--3. dışardan css dosyası eklemek(link)-->
+
+    <div class="conclusion">
+        <span>Lorem ipsum dolor sit amet.</span>
+        <form id="buttun">
+            <input type="submit" placeholder="onayla">
+        </form>
+    </div>
+</body>
+
+</html>
