@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css de selector kullanımı</title>
+    <style>
+        /*
+        biz normalde class ismine göre, id ismine göre veya etiketin ismine göre css özelliklerini uygulamayı 
+        öğrendik. Bu derste daha farklın şekilde etiketlerimize ulaşıp onların üzerinde değişiklik yapmanın 
+        farklı yöntemlerini ele alacağız.
+
+        * ---> bütün etiketleri seçer.(body)
+
+        tag_name, tag_name ---> yazılan etiketlerin tamamını seçer
+
+        tag_name((1) tag_name(2)  ---> bütün(1)lerin içinde bulunan (2) etiketlerini seçer
+
+        tag_name((1) tag_name(2):first-child  ---> bütün(1)lerin içinde bulunan ilk (2) etiketini seçer
+
+        tag_name((1) tag_name(2):last-child  ---> bütün(1)lerin içinde bulunan son (2) etiketini seçer
+
+
+
+        */
+
+
+
+        *{
+            background-color: rgb(85, 185, 224);
+        }
+
+        a, h3{
+            color: crimson;
+        }
+
+        ol li{
+            color: aquamarine;
+        }
+
+        div span:first-child{
+            color: blueviolet;
+        }
+
+        div p:last-child{
+            color: gold;
+        }
+    </style>
+
+</head>
+<body>
+    <i></i>
+    <div id="entry">
+        <span>span etiketi</span>
+        <p>p etiketi</p>
+        <p>p etiketi</p>
+        <a href="#">a etiketi</a>
+        <p>p etiketi</p>
+    </div>
+    <h3>h3 etiketi</h3>
+    <p>p etiketi</p>
+    <p>p etiketi</p>
+    <ol type="A">
+        <li>li etiketi</li>
+        <li>li etiketi</li>
+        <li>li etiketi</li>
+        <li>li etiketi</li>
+    </ol>
+
+    <img src="css_media/background.avif" alt="resim" style="height: 50px; width: 100px;">
+    <div class="result">
+        <span>span etiketi</span>
+        <br>
+        <h3 class="baslik">h3 etiketi</h3>
+        <span> span etiketi</span>
+        <br>
+        <span> span etiketi</span>
+        <p>p etiketi</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,16 @@
+.conclusion{
+    color: goldenrod;
+    background-color: gray;
+}
+
+#buttun{
+    color: blueviolet;
+    width: 150px;
+    height:  50px;
+}
+
+input{
+    height: 40px;
+    width: 100px;
+    color: chocolate;
+}
