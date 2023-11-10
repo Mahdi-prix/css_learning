@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>id, class ve etiketlere css ilave etmek</title>
+    <!--
+        mesela burada h2 dediğimizde bütün h2 etiketlerine uyguluyor ancak eğer class veya id 
+        bilgisi ekleseydik direkmen istediğimiz etiketi seçip css kodlarını çalıştırabilirdik 
+    -->
+    <style>
+        /* css da yorum satırı böyle yapılır.*/
+        h2{
+            color: indigo;
+            font-size: 30px;                  
+        }
+
+        #head{
+            background-color: chartreuse;
+        }
+
+        .body{
+            background-color: crimson;
+        }
+
+        .satir{
+            color: rgb(168, 51, 9);
+        }
+
+        #_2{
+            color: darkblue;
+        }
+
+        .baslik{
+            background-color: darkturquoise;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--
+    id: eşsizdir sadece bir kere aynı id'i kullanabiliriz.
+    class: birden çok kez aynı yapıda veya benzer yapıda gördüğümüz etiketlerde kullanabiliriz.
+    etiket ismi: etiket ismini yazarak css bilgileri verebiliriz ancak bütün o etiketlere css 
+    eklenir kafa karışıklığını önleyebilmek adına onlarda da class ve id bilgilerini yazarak 
+    onlarada css bilgilerini eklemek
+    -->
+
+    <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h2>
+    <h2>Lorem ipsum dolor sit.</h2>
+
+    <div id="head">
+        <h3>Lorem ipsum dolor sit.</h3>
+        <br>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto deleniti, earum rem reprehenderit minima
+            tempora amet quia, officia dolor doloribus delectus pariatur culpa itaque magni nemo.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In, dolorem maxime quo dolores molestiae aperiam
+            facilis delectus necessitatibus possimus.</p>
+        <ol type="I">
+            <li>joıkdfjoıkrf</li>
+            <li>opıewopırfjeop</li>
+            <li>opwfopwjfwpjpepj</li>
+            <li>jwflpjfpjpjpfpfjpw</li>
+        </ol>
+    </div>
+
+    <div class="body">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam commodi laboriosam ab voluptate aliquam
+            doloremque, temporibus, totam maiores minima exercitationem autem architecto sapiente laudantium omnis
+            mollitia id assumenda culpa! Aut fugit cumque officiis culpa. Consequuntur sed tempore nihil temporibus
+            obcaecati eveniet cumque odio veniam voluptates.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, laudantium aut minima quaerat maxime cumque
+            debitis id cupiditate! Necessitatibus cum voluptatibus culpa ex?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus exercitationem excepturi ut asperiores?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, ab blanditiis. Aliquid, itaque facere. Modi
+            eveniet consequatur rerum perspiciatis expedita consectetur illum iusto, corporis fugiat tempore, possimus
+            cum sed molestias id, nesciunt quae aperiam?</p>
+    </div>
+
+    <div>
+        <table border="2">
+            <tr class="baslik">
+                <th>jweşjfwe</th>
+                <th id="_2">dşpfığopwşıfwğopı</th>
+                <th>ljwfuoıwe</th>
+            </tr>
+
+            <tr class="satir">
+                <td>şjfşjwfşwje</td>
+                <td>lokfjgşejrg</td>
+                <td>opıufopıwuwpowupu</td>
+            </tr>
+
+            <tr class="satir">
+                <td>bvjkfb</td>
+                <td>jhdk</td>
+                <td>glkfuıoldup</td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
