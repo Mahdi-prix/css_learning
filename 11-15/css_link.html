@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css de link özellikleri</title>
+    <style>
+        a:link{                         /*ziyaret edilmeden önce link*/
+            color: red;
+            text-decoration: none;
+            font-weight: bolder;
+            font-size: 33px;
+            font-family: fantasy;
+            letter-spacing: 2px;
+            text-align: center;
+        }
+
+        a:hover{                        /*fare üzerine getirildiğinde link*/
+            color:coral
+        }
+
+
+        a:active{                       /*tıklandığında link*/
+            color: black;
+        }
+
+        a:visited{                      /*sayfayı ziaaret ettikten sonra link*/
+            color: green;
+        }
+
+    </style>
+</head>
+<body>
+    <!--
+    bizim burada yapmaka istediğimiz şey mesela bir linkin üzerine gelince işte rengin değişmesi tıkladıktan
+    sonra ise farklı renkte olması gibi özellikler
+    -->
+    <a href="https://store.steampowered.com/app/730/CounterStrike_2/">CounterStrike 2</a>
+</body>
+</html>

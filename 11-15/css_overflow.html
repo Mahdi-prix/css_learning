@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css da overflow özelliğinin kullanımı</title>
+
+    <style>
+        .first{
+            background-color: aqua;         /*defualt olarak vardır yazı taşınca yine de devam eder*/
+            height: 50px;
+            width: 45%;
+            overflow: visible;
+        }
+
+        .second{
+            background-color: cadetblue;        /*taşan kısımları gizler*/
+            height: 50px;
+            width: 45%;   
+            overflow: hidden;
+        }
+
+        .third{
+            background-color: darksalmon;        /*kaydırarak görüntüleme imkanı sağlar*/
+            height: 180px;
+            width: 45%;   
+            overflow: scroll;
+        }
+
+        .fourth{
+            background-color: deeppink;        /*taşan kısımlar varsa kaydırarak görüntüleme imkanı sağlar*/
+            height: 180px;
+            width: 45%;   
+            overflow: auto;
+        }
+
+        .fifth{
+            background-color: gold;        /*taşan kısımlar varsa kaydırarak görüntüleme imkanı sağlar(gerek olmadığı için kaydırma çubuğu eklemedi)*/
+            height: 480px;
+            width: 45%;   
+            overflow: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="first">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati molestiae odio maiores eum aliquid animi
+            sit ullam hic assumenda harum aspernatur natus, dolorem quam temporibus dignissimos debitis nam. Aut
+            incidunt soluta harum enim! Animi aut culpa ea, esse expedita unde adipisci hic earum soluta inventore
+            mollitia. Voluptate consectetur placeat omnis.
+        </p>
+    </div>
+    <br><br><br><br><br><br><br><br>
+    <div class="second">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, ut excepturi velit unde, voluptatem laudantium
+            quam nisi tempore optio veritatis enim illum deleniti quasi debitis iure magni recusandae vitae porro quae.
+            Quidem ipsam id veniam pariatur ducimus reiciendis quam dignissimos voluptatibus vitae! Ipsum ratione, error
+            tempore deleniti ullam tempora soluta?
+        </p>
+    </div>
+    <br>
+    <div class="third">
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt dolorum sapiente impedit dolores ullam
+            assumenda in quas deleniti. Doloremque, voluptatibus. Qui quia error dolorem et repudiandae perferendis,
+            tempora omnis at optio quod voluptatem dolore! Consequatur aliquid maiores quibusdam. Reiciendis sunt at
+            amet ad in! Odit, deserunt esse? Ea, beatae illo.
+        </p>
+    </div>
+    <br>
+    <div class="fourth">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, exercitationem? Amet laboriosam porro
+            incidunt similique qui. Velit officia maiores nulla, explicabo inventore natus asperiores iure illo, quaerat
+            delectus error rem aut cupiditate sint vitae itaque voluptate, earum fugit facere molestias nam non?
+            Deserunt atque hic modi earum repellendus assumenda corporis.
+        </p>
+    </div>
+    <br>
+    <div class="fifth">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum voluptatibus ab culpa ratione reprehenderit
+        aperiam. Facilis voluptatem doloribus ducimus commodi? Earum, aut? Ad numquam totam nisi? Autem velit voluptatem
+        eius. Veritatis quisquam dolor perspiciatis voluptas tempora ipsa labore suscipit recusandae molestiae, deserunt
+        provident, dolores obcaecati, animi molestias dolorum distinctio. Illo.
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css ile tablolar</title>
+    <style>
+        table,th,td{
+            border: 3px inset rgb(0, 2, 0);                /*kalınlık şekil renk*/
+            border-collapse: collapse;                /*çift çizgileri yok etmek için kullanılır.*/
+            
+        }
+
+        table th{
+            background-color: rgb(35, 113, 35);
+            font-family: fantasy;
+            font-size: 20px;
+            font-weight: lighter;
+            text-transform: uppercase;
+            color: white;
+        }
+
+        table tr:nth-child(odd){
+            background-color: rgb(191, 191, 191);
+        }
+
+        table tr{
+            text-align: center;
+            text-transform:capitalize;
+            font-style: italic;
+        }
+
+        table tr:hover{                         /*satırın üzerine gelince satırdaki yazıların rengi kırmızıya dönsün*/
+            color: crimson;
+        }
+
+        table{
+            width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>ülke</th>
+            <th>firma</th>
+            <th>firma ürünleri</th>
+            <th>yıllık gelir</th>
+        </tr>
+        
+        <tr>
+            <td>Almanya</td>
+            <td>BMW</td>
+            <td>araba ve motor</td>
+            <td>25B $</td>
+        </tr>
+
+        <tr>
+            <td>ABD</td>
+            <td>Apple</td>
+            <td>telefon ve akılı kullaklık</td>
+            <td>55B $</td>
+        </tr>
+
+        <tr>
+            <td>Birleşik krallık</td>
+            <td>Shell</td>
+            <td>petrol ve doğal gaz</td>
+            <td>78B $</td>
+        </tr>
+
+        <tr>
+            <td>Japonya</td>
+            <td>Toyota</td>
+            <td>araba</td>
+            <td>37B $</td>
+        </tr>
+    </table>
+</body>
+</html>
