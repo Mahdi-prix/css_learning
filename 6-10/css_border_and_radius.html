@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css da border and radius kullanımı</title>
+    <style>
+        /*border tipleri
+        1. dotted    --->      noktalı çerçeve
+        2. dashed    --->      çizgili çerçeve        
+        3. soild     --->      tam çerçeve
+        4. double    --->      çift çizgi
+        5. groove    --->      deneyerek görebilirsiniz(açıklamak biraz zor:] )
+        6. ridge     --->                       "
+        7. inset     --->                       "
+        8.outset     --->                       "
+        
+        borderin kullanımı şu şekilde dir
+        ---> border (çerçeve kalınlığı) (çerçeve tipi) (çerçeve rengi);
+        
+        border-radius özelliği ise çevrçevenin etrafını daha yuvarlak hale getirtiyor.
+        */
+
+        .first {
+            background-color: cyan;
+            height: 200px;
+            width: 200px;
+            border: 10px dashed black
+        }
+
+        .second {
+            background-image: url(css_media/background.avif);
+            height: 300px;
+            width: 300px;
+            border: 10px inset rgb(65, 62, 62);
+            background-position: center;
+            background-size: cover;
+            border-radius: 50%;
+        }
+
+        .third{
+            height: 300px;
+            width: 300px;
+            border: 10px outset rgb(10, 100, 200);
+            background-size: cover;
+            background-position: center;
+            border-radius: 15px;            
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="first">
+
+    </div>
+
+    <br><br>
+
+    <div class="second">
+
+    </div>
+
+    <br><br>
+
+    <div class="third">
+        <iframe src="https://www.youtube.com/embed/0IRqgvl2lLs?si=Lc7hEuOT2iA-VHB9" height="300px" width="300px"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css da display kullanımı</title>
+    <style>
+
+        /*
+        biz mesela bazen kendi sitemizde divlerimizi veya başka elementleri yanyana kullanmak isteriz ancak
+        divler block yapısında olduğu için yanyana değil de alt alta yazılır çünkü aynı block ta bulanamazlar
+        ancak eğer onları display ile inline yaparsak yazılan karakter kadar kullanılır ve divin istediğimiz 
+        çerçeve özelliği bozulur bunu engellemek için display: inline-block; ifadesini kullanırsak hem o iste-
+        diğimiz kalıp ve çerçeve yapısı bozulmaz hem aynı zamanda blok kaplamaz ve yanında başka divleri göster-
+        ebilme şansımız var. mesela aşağıdaki örnekte ben divlerimiz her satir da bir tane olacak şekilde ayarla-
+        maya çalışacağım.
+        */
+
+        .first{
+            background-color: deepskyblue;
+            height: 250px;
+            width: 250px;
+            display: inline-block;
+            margin-left: 150px;
+            margin-top: 260px;
+            margin-bottom: 260px;
+            margin-right: 1000px;                 
+        }
+
+        .second{
+            background-color: chartreuse;
+            height: 250px;
+            width: 250px;
+            display: inline-block;
+            margin-top: 260px;
+            margin-bottom: 260px;
+        }
+
+        .third{
+            background-color: deeppink;
+            height: 250px;
+            width: 250px;
+            display: inline-block;
+            margin-left: 150px;
+            margin-right: 1000px; 
+        }
+
+        .forth{
+            background-color: olive;
+            height: 250px;
+            width: 250px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        burad ufak bir hatırlatma yapmak istiyorum. inline ve blok etiket kavramlarını 
+        tekrardan değineceğiz.
+        blok etiketler h, div veya p etiketleri blok etiketlerimizdi çünkü onları kullandığı-
+        mız zaman bir daha aynı satır da veya daha doğrusu aynı bloğun içine başka bir etiket
+        ekleyemiyoruz. ancak inline etiketleri span veya a etiklerimizi kullandığımızda yazılan
+        karakter kadar yer kaplıyor.
+        ancak display sayesinde biz inline elementi block elemente , block elementi ise inline 
+        yapabiliriz
+    -->
+
+    <h4>Lorem ipsum dolor, sit amet consectetur adipisicing.</h1>       <!--block-->
+    <span>lkdwfhjwerhgjflkr</span>                                      <!--inline-->
+    
+    <hr>
+
+    <h4 style="display: inline;">Lorem ipsum dolor, sit amet consectetur adipisicing.</h1>       <!--inline-->
+    <span>lkdwfhjwerhgjflkr</span>                                                               <!--inline-->
+
+    <hr>
+
+    <h4>Lorem ipsum dolor, sit amet consectetur adipisicing.</h1>                       <!--inline-->
+    <span style="display: block;">lkdwfhjwerhgjflkr</span>                              <!--block-->
+
+    <hr>
+
+
+    <div class="first"></div>
+    <div class="second"></div>
+    <br><br>                        <!--alta geçmesi için-->
+    <div class="third"></div>
+    <div class="forth"></div>
+</body>
+</html>

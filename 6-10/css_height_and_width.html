@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>height ve width özellikleri</title>
+    <style>
+        .first{
+            background-color: chartreuse;
+            height: 200px;
+            width: 500px;
+        }
+        .second{
+            background-color: darkcyan;
+            height: 200px;
+            width: 70%;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        normalde width ve height öz niteliklerini biliyoruz.ancak burada dikkatınızı çekmek istediğim
+        bir nokta var. Varsaylım ki bir web site yazacağız ve tabi buradaki websitemize telefon, tablet
+        bilgisayar vs. gibi farklı ekran boyutlarına sahip cihazlarda kullanalıcak. biz normalde şuana 
+        kadar n px gibi piksel cinsinden değerler girerek istediğimiz elementin genişliği ve yüksekliğini
+        tanımlıyorduk ancak burada şöyle bir özellik var o da ekran küçüldükçe verdiğimiz piksel değeri
+        küçülmüyor ve mesela ortaya yazdığımız yazı telefonda gözükmüyor. yani bunu pencereyi küçültüp
+        büyüterek anlayabilirsiniz. Pekala biz bu sorunu n% şeklinde değer girerek çözeceğiz, Bu sayede
+        boyut ekranın yüzdesi ile ayarlanıyor. dolaysıyla ekran boyut değiştiğinde bizim belirtiğimiz
+        elementin belirtiğimiz yüzde göre değişiklik yapılıyor.
+    -->
+
+    <div class="first">
+        <center><span>height ve width özellikleri</span></center>
+    </div>
+    <br><br>
+    <div class="second">
+        <center><span>height ve width özellikleri</span></center>
+    </div>
+</body>
+</html>
