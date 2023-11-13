@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css de pozisiyonlar</title>
+    <style>
+        #e {
+            position: sticky;
+            text-align: center;
+            height: 200px;
+            width: 200px;
+            background-color: dodgerblue;
+        }
+
+        #a {
+            position: static;
+            text-align: center;
+            height: 200px;
+            width: 200px;
+            background-color: cadetblue;
+            bottom: 400px;
+            /*işlevsiz*/
+        }
+
+        #b {
+            position: relative;
+            text-align: center;
+            height: 200px;
+            width: 200px;
+            background-color: darkgoldenrod;
+            left: 500px;
+        }
+
+        #c {
+            position: fixed;
+            text-align: center;
+            height: 200px;
+            width: 200px;
+            background-color: darkolivegreen;
+            left: 400px;
+            bottom: 200px;
+        }
+
+        #d {
+            position: absolute;
+            text-align: center;
+            height: 200px;
+            width: 200px;
+            background-color: crimson;
+            top: 200px;
+            left: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <!--
+    position: static;
+    Bu, bir öğenin varsayılan davranışını belirtir. Öğe, belgedeki normal akış içinde bulunur. 
+    top, bottom, left ve right özellikleri bu durumda çalışmaz.
+
+
+    position: relative;
+    Relative pozisyon, bir öğenin normal akış içinde bulunduğu yere göre konumunu ayarlar. top, bottom, left
+    ve right özellikleri bu durumda çalışır. Relative pozisyon ayarlandığında, öğenin orijinal pozisyonu değişmez,
+    sadece konumu ayarlanır ve bu konuma göre diğer öğeler etkilenmez.
+
+
+    position: absolute;
+    Absolute pozisyon, bir öğenin en yakın pozisyonu belirlenmiş olan üst öğeye göre konumlandırılmasını sağlar.
+    Eğer hiçbir üst öğe relative, absolute veya fixed pozisyon değerine sahip değilse, bu durumda sayfa köküne 
+    göre konumlandırılır. Absolute pozisyon, normal akış içinden kaldırılır ve bu nedenle diğer öğeler üzerinde
+    hiçbir etkisi olmaz.
+
+
+    position: fixed;
+    Fixed pozisyon, bir öğenin tarayıcı penceresine göre konumlandırılmasını sağlar. Bu, sayfanın kaydırıldığı
+    durumlarda bile öğenin hareket etmeyeceği anlamına gelir. Örneğin, bir gezinme çubuğunu sayfanın üstünde 
+    sabit tutmak için kullanılabilir.
+
+
+    position: sticky;
+    Sticky pozisyon, bir öğenin belirli bir konumdan başlayarak kaydırıldığında, bir noktada belirli bir konumda
+    "yapışacağını" belirtir. Bu özellik, bir öğenin, belirli bir yere kaydırıldığında sabitlenmesini sağlar, 
+    ancak bu nokta belirlenmiş bir eşiğin ötesine geçilirse öğe tekrar normal akışa döner.
+    -->
+    <div id="a">
+        <h3>position:static</h3>
+    </div>
+
+    <div id="b">
+        <h3>position:relative</h3>
+    </div>
+
+    <div id="c">
+        <h3>position:fixed</h3>
+    </div>
+
+    <div id="d">
+        <h3>position:absolute</h3>
+    </div>
+
+    <div id="e">
+        <h3>position:sticky</h3>
+    </div>
+
+</body>
+
+</html>

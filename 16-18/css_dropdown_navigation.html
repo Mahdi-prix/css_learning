@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css ile açılır menü yapımı</title>
+    <style>
+        #yatay{
+            list-style-type: none;
+            background-color: darkgray;
+            height: 40px;
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        #yatay li{
+            display: inline-block;
+            padding-left: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-right: 50px;
+            
+        }
+
+        #yatay li a{
+            text-decoration: none;
+            color:whitesmoke;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: larger;
+        }
+
+        #yatay li:hover{
+            background-color: black;
+        }
+
+        #store_li{
+            color: whitesmoke;
+            position: absolute;
+            z-index: 1;
+            display: none;
+            margin-left: -50px;
+            margin-top: 8px;
+        }
+
+        #store_li li{
+            background-color: darkgray;
+            width: 56px;
+        }
+
+        #store_li li:hover{
+            display: block;
+            background-color: black;
+        }
+
+        .inside_menu:hover #store_li{
+            display: block;
+            
+        }
+    </style>
+</head>
+<body>
+    <ul id="yatay">
+        <li><a href="#">Ana sayfa</a></li>
+        <li class="inside_menu">
+            <a href="#">Dükan</a>
+            <div id="store_li">
+                <ul>
+                    <li style="display: block;"><a href="#">telefon</a></li>
+                    <li style="display: block;"><a href="#">kullaklık</a></li>
+                    <li style="display: block;"><a href="#">bilgisayar</a></li>
+                </ul>
+            </div>
+        </li>
+
+        <li><a href="#">Haberler</a></li>
+        <li><a href="#">İstatislikler</a></li>
+        <li><a href="#">Hakkımızda</a></li>
+    </ul>
+</body>
+</html>
